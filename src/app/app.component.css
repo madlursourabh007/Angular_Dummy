@@ -1,0 +1,9 @@
+.errorOfEachfields{
+    color: red;
+    font-weight: 2;
+}
+
+input.ng-invalid.ng-touched  {
+    border: 1px solid #a94442; /* red */
+  }
+
