@@ -1,0 +1,22 @@
+.mainFlex{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #FAF9F7;
+    flex-direction: column;
+}
+
+.flexForButton{
+    display: flex;
+    justify-content: center;
+}
+
+.cardOuter{
+    width: 18reh;
+    border-radius: 5%;
+}
+
+input.ng-invalid.ng-touched{
+    border : 1px solid #a94442;
+}

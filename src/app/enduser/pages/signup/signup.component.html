@@ -1,0 +1,38 @@
+<div class="mainFlex">
+  <div style="background: #FAF9F7">
+    <h4>O2 Medicine Company</h4>
+  </div>
+  <div class="card cardOuter">
+    <div class="card-body">
+      <div class="row justify-content-md-center">
+        <div class="col-md-12" style="text-align: center;">
+          <h5>Register</h5>
+        </div>
+      </div>
+      <form [formGroup]="registrationForm">
+        <div class="form-group">
+          <label for="customerMobile">Customer Mobile No</label>
+          <input type="text" maxlength="10" class="form-control" placeholder="Mobile Number" id="customerMobile" formControlName="customerMobile">
+          <div style="color: #a94442;font-weight : 2" *ngIf="registrationForm.controls.customerMobile.invalid && (registrationForm.controls.customerMobile.touched || registrationForm.controls.customerMobile.dirty) || registrationForm.controls.customerMobile.errors?.minlength">
+            Customer mobile no required and must contains 10 digits
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="customerPin">Customer PIN</label>
+          <input type="text" id="customerPin" class="form-control" placeholder="PIN" formControlName="customerPin">
+          <div style="color: #a94442;font-weight : 2" *ngIf="registrationForm.controls.customerPin.invalid && (registrationForm.controls.customerPin.touched || registrationForm.controls.customerPin.dirty)">
+              Customer pin required
+            </div>
+        </div>
+        <div class="flexForButton">
+          <div>
+            <button class="btn btn-secondary" [disabled]="!registrationForm.valid" (click)=performRegistration()>REGISTER</button>
+          </div>
+          <div style="padding-left: 3%;">
+              <button class="btn btn-secondary" (click)=goToLogin()>LOGIN</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
