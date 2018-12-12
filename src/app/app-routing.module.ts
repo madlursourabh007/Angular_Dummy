@@ -10,6 +10,10 @@ const routes: Routes = [
     loadChildren : '../app/enduser/pages/signup/signup.module#SignupModule'
   },
   {
+    path : 'home',
+    loadChildren : '../app/enduser/pages/home/home.module#HomeModule'
+  },
+  {
     path : 'login',
     component : LoginComponent
   },

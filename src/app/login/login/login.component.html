@@ -20,7 +20,7 @@
             </div>
            <div style="display: flex;justify-content: center;">
              <div>
-              <button class="btn btn-secondary" [disabled]="!loginForm.valid">SIGN IN</button>
+              <button class="btn btn-secondary" (click)="goToHome()" [disabled]="!loginForm.valid">SIGN IN</button>
              </div>
              <div style="padding-left: 3%;">
               <button class="btn btn-secondary" (click)="goToSignUP()">SIGN UP</button>
