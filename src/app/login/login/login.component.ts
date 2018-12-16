@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
+declare var $ : any;
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -22,10 +24,15 @@ export class LoginComponent implements OnInit {
   }
 
   goToSignUP() : void {
-    this._router.navigate(['/signup']);
+    //$("invitation").modal('show');
+    //this._router.navigate(['/signup']);
   }
 
   goToHome() : void {
     this._router.navigate(['/home']);
+  }
+
+  goTOMSSPHomePage() : void {
+    this._router.navigate(['/mssp'])
   }
 }

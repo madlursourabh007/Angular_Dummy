@@ -1,0 +1,30 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" style="width: 320px;">O2 Medicine Company</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse"id="navbarNavDropdown">
+      <ul class="navbar-nav"> 
+        
+        <li class="ml-sm-3 ml-xs-3 ml-lg-3 ml-xl-3">
+          <a routerLink="personal_info" routerLinkActive="active" class="nav-link menuItemSizeAndCursorMark">PERSONAL INFO</a>
+        </li>
+
+        <li class="ml-sm-3 ml-xs-3 ml-lg-3 ml-xl-3">
+          <a [routerLink]="['',{outlets:{education:['educational_info']}}]" routerLinkActive="active" class="nav-link menuItemSizeAndCursorMark">EDUCATIONAL INFO</a>
+        </li>
+
+        <li class="ml-sm-3 ml-xs-3 ml-lg-3 ml-xl-3">
+          <a routerLink="financial_info" routerLinkActive="active" class="nav-link menuItemSizeAndCursorMark">FINANCIAL INFO</a>
+        </li>
+
+        <li class="ml-sm-3 ml-xs-3 ml-lg-3 ml-xl-3">
+          <a routerLink="agreement_copy_upload" routerLinkActive="active" class="nav-link menuItemSizeAndCursorMark">MSSP AGREEMENT COPY UPLOAD</a>
+        </li>
+      </ul>
+    </div>
+  </nav> 
+  <router-outlet></router-outlet>
+  <router-outlet name="education"></router-outlet>
+  <router-outlet name="financial"></router-outlet>
+  <router-outlet name="upload"></router-outlet>

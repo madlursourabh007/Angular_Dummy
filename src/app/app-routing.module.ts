@@ -6,8 +6,9 @@ import { SignupModule } from '../app/enduser/pages/signup/signup.module';
 
 const routes: Routes = [
   {
-    path : 'signup',
-    loadChildren : '../app/enduser/pages/signup/signup.module#SignupModule'
+    path : 'mssp',
+    loadChildren : '../app/mssp/pages/mssp-home-page/mssp-home-page.module#MsspHomePageModule'
+    //loadChildren : '../app/enduser/pages/signup/signup.module#SignupModule'
   },
   {
     path : 'home',

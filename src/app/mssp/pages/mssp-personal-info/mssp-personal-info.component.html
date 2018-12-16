@@ -1,0 +1,81 @@
+<div class="card" style="border-radius: 2%;border : 2 px transparent;margin :5%;background: #FAF9F7">
+  <div class="card-body">
+    <div style="display: flex;justify-content: center;">
+      <h3>Personal Information Page</h3>
+    </div>
+    <form style="margin-top: 2%;">
+      <div class="form-row">
+        <div class="form-group col-md-4 col-sm-4 col-xs-4 col-lg-4 col-xl-4">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" placeholder="firstname" class="form-control">
+        </div>
+        
+        <div class="form-group col-md-4 col-sm-4 col-xs-4 col-lg-4 col-xl-4">
+          <label for="middlename">Middle Name</label>
+          <input type="text" id="middlename" placeholder="middlename" class="form-control">
+        </div>
+
+        <div class="form-group col-md-4 col-sm-4 col-xs-4 col-lg-4 col-xl-4">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastename" placeholder="lastname" class="form-control">
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group col-md-6 col-sm-6 col-xs-6 col-lg-6 col-xl-6">
+          <label for="pan">PAN</label>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+          </div>
+        </div>
+
+        <div class="form-group col-md-2 col-sm-2 col-xs-2 col-lg-2 col-xl-2" style="margin-top: 2.8%;">
+          <button class="btn btn-secondary" (click)="uploadPanImage()">Upload</button>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6 col-sm-6 col-xs-6 col-lg-6 col-xl-6">
+          <label for="pan">AADHAAR</label>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+          </div>
+        </div>
+  
+        <div class="form-group col-md-2 col-sm-2 col-xs-2 col-lg-2 col-xl-2" style="margin-top: 2.5%;">
+          <button class="btn btn-secondary" (click)="uploadAadhaarImage()">Upload</button>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6 col-sm-6 col-xs-6 col-lg-6 col-xl-6">
+          <label for="bank_account">Bank Account Number</label>
+          <input type="text" id="bank_account" placeholder="bank account number" class="form-control">
+        </div>
+
+        <div class="form-group col-md-3 col-sm-3 col-xs-3 col-lg-3 col-xl-3">
+          <label for="ifsc">IFSC</label>
+          <input type="text" id="ifsc" placeholder="ifsc" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-5 col-sm-5 col-xs-5 col-lg-5 col-xl-5">
+          <label for="bank">Bank</label>
+          <input type="text" id="bank" placeholder="bank" class="form-control">
+        </div>
+  
+        <div class="form-group col-md-4 col-sm-4 col-xs-4 col-lg-4 col-xl-4">
+          <label for="branch">Branch</label>
+          <input type="text" id="branch" placeholder="branch" class="form-control">
+        </div>
+      </div>
+      <div style="display: flex;justify-content: center">
+        <button class="btn btn-secondary col-md-2" (click)="savePersonalInformation()">SAVE</button>
+        <button class="btn btn-secondary col-md-2" style="margin-left: 2%;" (click)="submitPersonalInformation()">SUBMIT</button>
+      </div>
+    </form>
+  </div>
+</div>

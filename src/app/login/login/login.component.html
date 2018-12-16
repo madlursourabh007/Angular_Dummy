@@ -23,10 +23,28 @@
               <button class="btn btn-secondary" (click)="goToHome()" [disabled]="!loginForm.valid">SIGN IN</button>
              </div>
              <div style="padding-left: 3%;">
-              <button class="btn btn-secondary" (click)="goToSignUP()">SIGN UP</button>
+              <button #signUP class="btn btn-secondary"  data-toggle="modal" data-target="#exampleModal" >SIGN UP</button>
              </div>
            </div>
         </form>
       </div>
     </div>
   </div>
+
+ <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body" style="text-align: center;">
+        <div><h4>Welcome O2 Medicine</h4></div>
+        <div>
+          <input type="text" class="form-control" placeholder="Enter Invitation Code">
+        </div>
+        <div style="display: flex;justify-content: center;margin-top: 2%;">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" data-dismiss="modal" (click)="goTOMSSPHomePage()" class="btn btn-primary" style="margin-left: 2%;">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
