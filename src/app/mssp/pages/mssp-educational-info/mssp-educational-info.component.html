@@ -6,8 +6,8 @@
 
     <form style="margin-top: 2%;">
       <div class="form-row">
-        <div class="form-group">
-          <label for="qualification">Highest Qualification</label>
+        <div class="form-group col-md-6 col-sm-6 col-xs-6 col-lg-6 col-xl-6">
+          <label for="qualification" style="color: #6c757d"><b>HIGHEST QUALIFICATION</b></label>
           <select class="form-control">
             <option>SSLC</option>
             <option>PUC</option>
@@ -21,6 +21,47 @@
           </select>
         </div>
       </div>
+      
+      <div class="form-row">
+        <div class="form-group col-md-6 col-sm-6 col-xs-6 col-lg-6 col-xl-6">
+          <label for="pan" style="color: #6c757d"><b>GRADUATE</b></label>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+          </div>
+        </div>
+
+        <div class="form-group col-md-6 col-sm-6 col-xs-6 col-lg-6 col-xl-6">
+            <label for="pan" style="color: #6c757d"><b>PUC</b></label>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+              <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+            </div>
+          </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6 col-sm-6 col-xs-6 col-lg-6 col-xl-6">
+          <label for="pan" style="color: #6c757d"><b>SSLC</b></label>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+          </div>
+        </div>
+
+        <div class="form-group col-md-6 col-sm-6 col-xs-6 col-lg-6 col-xl-6">
+          <label for="pan" style="color: #6c757d"><b>ANY QUALIFICATION</b></label>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+              <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+          </div>
+        </div>
+      </div>
+
+    <div style="display: flex;justify-content: center">
+      <button class="btn btn-secondary col-md-2" (click)="saveEducationalInformation()">SAVE</button>
+      <button class="btn btn-secondary col-md-2" style="margin-left: 2%;" (click)="submitEducationalInformation()">SUBMIT</button>
+    </div>
     </form>
   </div>
 </div>

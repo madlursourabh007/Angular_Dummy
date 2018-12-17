@@ -11,7 +11,8 @@
         </li>
 
         <li class="ml-sm-3 ml-xs-3 ml-lg-3 ml-xl-3">
-          <a [routerLink]="['',{outlets:{education:['educational_info']}}]" routerLinkActive="active" class="nav-link menuItemSizeAndCursorMark">EDUCATIONAL INFO</a>
+          <a routerLink="educational_info" routerLinkActive="active" class="nav-link menuItemSizeAndCursorMark">EDUCATIONAL INFO</a>
+          <!-- <a [routerLink]="[{outlets:{education:['educational_info']}}]" routerLinkActive="active" class="nav-link menuItemSizeAndCursorMark">EDUCATIONAL INFO</a> -->
         </li>
 
         <li class="ml-sm-3 ml-xs-3 ml-lg-3 ml-xl-3">
@@ -25,6 +26,6 @@
     </div>
   </nav> 
   <router-outlet></router-outlet>
-  <router-outlet name="education"></router-outlet>
+  <!-- <router-outlet name="education"></router-outlet>
   <router-outlet name="financial"></router-outlet>
-  <router-outlet name="upload"></router-outlet>
+  <router-outlet name="agreement"></router-outlet> -->

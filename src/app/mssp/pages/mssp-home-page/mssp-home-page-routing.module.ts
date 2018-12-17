@@ -19,18 +19,20 @@ const routes: Routes = [{
     },
     {
       path : 'financial_info',
-      loadChildren : '../mssp-financial-info/mssp-financial-info.module#MsspFinancialInfoModule'
+      loadChildren : '../mssp-financial-info/mssp-financial-info.module#MsspFinancialInfoModule',
+      outlet : 'financial'
     },
     {
       path : 'agreement_copy_upload',
-      loadChildren : '../mssp-agreement-copy-upload/mssp-agreement-copy-upload.module#MsspAgreementCopyUploadModule'
+      loadChildren : '../mssp-agreement-copy-upload/mssp-agreement-copy-upload.module#MsspAgreementCopyUploadModule',
+      outlet : 'agreement'
     },
     {
       path : '',
       loadChildren : '../mssp-personal-info/mssp-personal-info.module#MsspPersonalInfoModule'
 
     }
-]
+  ]
 }];
 
 @NgModule({

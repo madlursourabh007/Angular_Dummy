@@ -4,8 +4,7 @@ import { MsspEducationalInfoComponent } from 'src/app/mssp/pages/mssp-educationa
 
 const routes: Routes = [{
   path : "",
-  component : MsspEducationalInfoComponent,
-  outlet : 'education'
+  component : MsspEducationalInfoComponent
 }];
 
 @NgModule({
